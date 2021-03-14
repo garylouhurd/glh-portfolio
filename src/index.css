@@ -8,7 +8,7 @@ rgb(80,200,120)
 /*     GLOBAL     */
 body{
     font-family: 'Montserrat', sans-serif;
-    color: rgb(0,71,171);
+    color: rgba(0,71,171, .7);
 }
 a{
     color: rgb(0,71,171);
@@ -36,6 +36,10 @@ nav{
     box-shadow: 31px 31px 21px -30px #0047ab;
 }
 
+img{
+    object-fit: cover;
+}
+
 /*     Sections Hero     */
 .hero{
    display: flex;
@@ -47,10 +51,15 @@ nav{
 .hero-text{
    margin: 0 auto;
    font-size: 2rem;
+
 }
 .hero-text h1{
     font-family: 'Great Vibes', cursive;
     font-size: 4rem;
+}
+
+.heroImg {
+    opacity: .7;
 }
 
 /*     Sections About Me     */
@@ -138,4 +147,66 @@ nav{
 }
 .icon{
     padding-right: 2rem;
+}
+
+@media (max-width: 1020px){
+    .hero-text{
+        padding-top: 2rem;
+        margin: 1rem auto;
+        text-align: center;
+    }
+    .heroImg{
+        display: none;
+    }
+    .hero-text h1{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3rem;
+    }
+    .myWork h2{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+    }
+     .aboutMe h2, h3{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    .aboutMe{
+        height: 50vh;
+    }
+    .myWork-header{
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .mySkillset{
+        height: 50vh;
+        padding: 0;
+        margin: 0;
+        background-color: rgba(80,200,120, .1);
+    }
+    .mySkillsetIcons{
+        
+    }
+    .mySkillset-header{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+    }
+    
+    .skillSVG{
+        width: 50px;
+        height: 50px;
+    }
+    .button{
+        width: 200px;
+        text-align: center;
+        background-color:rgba(80,200,120, .7); 
+        border-radius: 100px;
+        font-size: 1.5rem;
+        margin: 0 auto;
+    }
+    .social1{
+        justify-content: center; 
+        margin-top: 1rem;
+    }
 }
