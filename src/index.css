@@ -40,6 +40,15 @@ img{
     object-fit: cover;
 }
 
+footer{
+    background-color: rgba(0,71,171, .2);
+    height: 5vh;
+    text-align: center;
+}
+.footerP{
+    padding-top:1rem;
+}
+
 /*     Sections Hero     */
 .hero{
    display: flex;
